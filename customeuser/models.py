@@ -10,7 +10,7 @@ class CustomeUser(AbstractUser,MyModel):
     ) 
 
     user_type = models.IntegerField(choices=type_user_data,default=1)
-    profile_pic=models.ImageField(upload_to='profile')
+    # profile_pic=models.ImageField(upload_to='profile')
     address = models.TextField()
     email = models.EmailField(unique=True)
     phone_number = models.CharField(max_length=13)
